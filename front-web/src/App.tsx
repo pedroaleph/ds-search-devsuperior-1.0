@@ -1,14 +1,10 @@
-import Home from 'pages/Home';
+import Routes from 'routes';
 import './App.css';
-import Header from './components/Header';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Home />
-    </div>
-  );
+    <Routes />
+  )
 }
 
 export default App;
