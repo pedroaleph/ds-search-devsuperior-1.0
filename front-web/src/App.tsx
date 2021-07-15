@@ -1,8 +1,11 @@
 import './App.css';
+import Header from './components/Header';
 
-function App() {
+const App = () => {
   return (
-    <h1>Hello DevSuperior</h1>
+    <div>
+      <Header />
+    </div>
   );
 }
 
