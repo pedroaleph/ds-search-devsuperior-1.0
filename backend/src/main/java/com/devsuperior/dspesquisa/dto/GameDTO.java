@@ -15,12 +15,6 @@ public class GameDTO implements Serializable {
 	public GameDTO() {
 		
 	}
-
-	public GameDTO(Long id, String title, Platform platform) {
-		this.id = id;
-		this.title = title;
-		this.platform = platform;
-	}
 	
 	public GameDTO(Game entity) {
 		id = entity.getId();
