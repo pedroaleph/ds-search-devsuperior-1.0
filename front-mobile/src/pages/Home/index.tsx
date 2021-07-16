@@ -3,11 +3,13 @@ import { FontAwesome5 as Icon } from "@expo/vector-icons";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { RectButton } from 'react-native-gesture-handler'
 import gamer from '../../assets/gamer.png';
+import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
+  const navigation = useNavigation();
 
   const handleOnPress = () => {
-    
+    navigation.navigate('CreateRecord');
   } 
 
   return <>
