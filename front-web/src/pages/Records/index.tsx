@@ -1,7 +1,7 @@
 import axios from 'axios';
+import Filters from 'components/Filters';
 import Pagination from 'components/Pagination';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { formatDate } from './helpers';
 import './styles.css';
 import { RecordsResponse } from './types';
@@ -25,16 +25,7 @@ const Records = () => {
 
   return (
     <div className="page-container">
-      <div className="filters-container records-actions">
-        <div style={{ flex: 1 }}>
-          <input type="text" placeholder="Data Inicial" />
-          <input type="text" placeholder="Data Final" />
-          <button className="clean-filters">LIMPAR PESQUISA</button>
-        </div>
-        <Link to="/charts">
-          <button className="action-filters">VER GRÁFICO</button>
-        </Link>
-      </div>
+      <Filters link="charts" linkText="VER GRÁFICO" />
       <table className="records-table" cellPadding="0" cellSpacing="0">
         <thead >
           <tr>
