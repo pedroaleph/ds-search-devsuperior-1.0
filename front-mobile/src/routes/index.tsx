@@ -3,7 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
 import Header from "../components/Header";
 import Home from "../pages/Home";
-import CreateRecord from "../pages/Home/CreateRecord";
+import CreateRecord from "../pages/CreateRecord";
 
 const Stack = createStackNavigator();
 
